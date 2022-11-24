@@ -1,0 +1,37 @@
+.purple {
+  color: #7000ff;
+}
+
+.orange {
+  color: #ff5c00;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.btn-danger {
+  background-color: #ff5c00;
+  color: white;
+  border-color: #ff5c00;
+}
+
+.btn-danger:hover {
+  background-color: #fb7a30;
+  border-color: wheat;
+  box-shadow: 0 0 50px 15px #fb7a30;
+}
+
+.bg-blob {
+  background-image: url("/images/homeBlob.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .glass {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
+}

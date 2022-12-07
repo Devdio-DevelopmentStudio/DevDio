@@ -1,8 +1,15 @@
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
 body {
   background-image: url("../images/Desktop - 4.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .navi {
@@ -37,3 +44,4 @@ hr {
     width: 20rem;
   }
 }
+

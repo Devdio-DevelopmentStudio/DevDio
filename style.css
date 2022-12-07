@@ -1,3 +1,10 @@
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
 .purple {
   color: #7000ff;
 }
@@ -40,5 +47,11 @@
   .glass {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
+  }
+}
+
+@media only screen and(max-width:500px){
+  .svg{
+    visibility: hidden;
   }
 }

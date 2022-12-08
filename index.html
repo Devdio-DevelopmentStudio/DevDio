@@ -12,6 +12,9 @@
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="/our_services/services.css" />
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  
 </head>
 
 <body>
@@ -33,9 +36,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">Our Clients</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#ourServices">Our Services</a>
             </li>
@@ -51,10 +54,10 @@
   <div class="bg-blob vh-100" id="home">
     <div class="d-flex flex-column-reverse flex-sm-row justify-content-md-between align-items-center">
       <div class="container ">
-        <div class="container">
+        <div class="container mt-5">
           <div class="row m-2">
-            <h1 class="m-3 text-sm-light">Convert Your Dreams to Reality!</h1>
-            <h3 class="mx-3 text">
+            <h1 class="m-3 py-5">Convert Your Dreams to Reality!</h1>
+            <h3 class="mx-3 ">
               You don't need to be an app developer <br> to get your startup idea
               rolling, because you have
               <span style="font-weight: bold">DevDio</span>
@@ -67,8 +70,8 @@
         </div>
         <a href="#contactUs" class="btn btn-danger m-5 px-5 py-3 shadow-lg">Contact Us Now!</a>
       </div>
-      <div class="container svg mt-5">
-        <img src="/images/Software integration 1.svg" alt="" class="container-fluid" />
+      <div class="container mt-5">
+        <img src="/images/Software integration 1.svg" alt="" class="container-fluid d-none d-md-block" />
       </div>
     </div>
   </div>
@@ -76,9 +79,9 @@
 
 
 
-  <!-- <hr> -->
-  <div class="services-start mt-4">
-    <h2 class="text-center mt-2" id="ourServices">Our Services</h2>
+  <hr>
+  <div class="services-start">
+    <h2 class="text-center my-4" id="ourServices">Our Services</h2>
     <div class="container cardcontainer mt-2 mb-3 services" style="margin-top: 10%;">
       <div class="d-flex flex-wrap justify-content-evenly">
 
@@ -91,8 +94,7 @@
 
             <div class="card-body" style="padding-top: 0;">
               <h5 class="card-title text-center mt-1" style="padding-top: 0;">Desktop App</h5>
-              <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
+              <p class="card-text text-center">Get your app developed for major desktop operating systems!<sup>*</sup></p>
               <a href="#contactUs" class="btn d-flex justify-content-center"
                 style="background-color: #FF5C00; color: #FFFF; ">Choose This</a>
             </div>
@@ -100,7 +102,7 @@
         </div>
 
         <div class="d-flex mt-2 contactUs ">
-          <div class="card glass" style="width: 18rem;">
+          <div class="card glass" style="width: 18rem;  background-color: rgba(255, 92, 0, 0.06); border: 1.5px solid #FF5C00">
             <img src="../images/webapp.svg" class="card-img-top" alt="..." style="width: 286px; height: 201px;">
             <div class="mr-2 ml-2">
               <hr>
@@ -108,8 +110,7 @@
 
             <div class="card-body" style="padding-top: 0;">
               <h5 class="card-title text-center mt-1" style="padding-top: 0;">Web App</h5>
-              <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
+              <p class="card-text text-center">A Robust web-application to get your startup idea on the web as quickly as possible!</p>
               <a href="#contactUs" class="btn d-flex justify-content-center"
                 style="background-color: #FF5C00; color: #FFFF; ">Choose This</a>
             </div>
@@ -125,8 +126,7 @@
 
             <div class="card-body" style="padding-top: 0;">
               <h5 class="card-title text-center mt-1" style="padding-top: 0;">Mobile App</h5>
-              <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
+              <p class="card-text text-center">Get your app on the most used platform of interaction for millions of users! <br> That's a mobile app! </p>
               <a href="#contactUs" class="btn d-flex justify-content-center"
                 style="background-color: #FF5C00; color: #FFFF; ">Choose This</a>
             </div>
@@ -144,8 +144,7 @@
 
             <div class="card-body" style="padding-top: 0;">
               <h5 class="card-title text-center mt-1" style="padding-top: 0;">Software Ecosystem</h5>
-              <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk
-                of the card's content.</p>
+              <p class="card-text text-center">Why not support all major computing environments? This package will allow your app to be served on the web, PCs, mobiles and more, for a fraction of the price!</p>
               <a href="#contactUs" class="btn d-flex justify-content-center"
                 style="background-color: #FF5C00; color: #FFFF; ">Choose This</a>
             </div>
@@ -185,18 +184,18 @@
             </div>
         </div>
     </div> -->
-  <h2 class="text-center mt-2" id="contactUs">Contact Us</h2>
+  <h2 class="text-center my-4" id="contactUs">Contact Us</h2>
   <div class="container mt-2 services mb-5" style="margin-top: 10%;">
     <div class="d-flex flex-wrap justify-content-evenly">
 
-      <div class="d-flex mt-5 contactcard">
+      <div class="d-flex mt-2 contactcard">
         <div class="card contactUs glass  pt" style="width: 30rem;">
           <div class="card-body">
             <h5 class="card-title text-center mt-2 mb-2">Just One Step Away!</h5>
             <p class="card-text">
             <div class="form-floating mt-2 mb-3">
               <input type="name" class="form-control" id="floatingPassword" placeholder="Enter your name">
-              <label for="floatingPassword">Name</label>
+              <label for="floatingPassword" name="name">Name</label>
             </div>
             <div class="form-floating mt-2 mb-3">
               <input type="number" class="form-control" id="floatingPassword" placeholder="Enter your name">
@@ -226,11 +225,10 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="d-flex mt-5 flex-sm-row order-1" style="height: 478px">
-                  <img src="../images/Group 41.svg" alt="" style="width: 600px;">
-                  
-            </div> -->
+      <!-- <div class="d-flex mt-5 flex-sm-row order-1 dynamic-img" style="height: 478px">
+        <img src="../images/Group 41.svg" alt="" style="width: 600px;" class=" dynamic-img"> -->
+        
+  </div>
 
     </div>
   </div>
@@ -244,6 +242,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+
+    <script src="mailform.js"></script>
 </body>
 
 </html>

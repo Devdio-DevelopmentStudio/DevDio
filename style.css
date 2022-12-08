@@ -1,8 +1,9 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 body {
-  position: relative
+  position: relative;
 }
 
 .purple {
@@ -50,8 +51,11 @@ body {
   }
 }
 
-@media only screen and(max-width:500px){
-  .svg{
-    visibility: hidden;
+@media (max-width: 500px) {
+  .bg-blob {
+    background: transparent;
+  }
+  .dynamic-img {
+    display: none;
   }
 }

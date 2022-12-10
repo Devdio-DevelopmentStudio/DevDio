@@ -38,6 +38,7 @@ form.addEventListener("submit", (event) => {
       Other Info: ${msg}`,
     }).then((message) => {
       message = message.toLowerCase();
+      console.log(message);
       if (message.includes("ok")) {
         modal.show();
       } else {

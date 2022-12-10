@@ -38,7 +38,7 @@ body {
 }
 
 .bg-blob {
-  background-image: url("/images/homeBlob.svg");
+  background-image: url("images/homeBlob.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

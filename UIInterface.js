@@ -7,18 +7,22 @@ const ecosystem = document.querySelector("#ecosystem");
 
 desktop.addEventListener("click", () => {
   select.value = "Desktop App";
+  select.classList.add("is-valid");
 });
 
 webApp.addEventListener("click", () => {
   select.value = "Web App";
+  select.classList.add("is-valid");
 });
 
 mobile.addEventListener("click", () => {
   select.value = "Mobile App";
+  select.classList.add("is-valid");
 });
 
 ecosystem.addEventListener("click", () => {
   select.value = "Software Ecosystem";
+  select.classList.add("is-valid");
 });
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
@@ -34,7 +38,6 @@ ecosystem.addEventListener("click", () => {
       "submit",
       function (event) {
         if (!form.checkValidity()) {
-          console.log("HITTT");
           event.preventDefault();
           event.stopPropagation();
         }

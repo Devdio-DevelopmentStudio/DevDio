@@ -28,7 +28,7 @@ form.addEventListener("submit", (event) => {
         "kedarkhedkar2001@gmail.com",
         "saurabhpl14@gmail.com",
       ],
-      // From: "devdio1316@gmail.com",
+      From: "devdio1316@gmail.com",
       Subject: `Client Request for ${appType}`,
       Body: `Customer Info, 
       Name : ${name}, 
